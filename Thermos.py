@@ -15,7 +15,7 @@ class User:
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title='Title passed from view to template',
+    return render_template('index.html', title='Created by',
                            user=User('Luke', 'Woods'))
 
 
