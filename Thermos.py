@@ -9,7 +9,7 @@ class User:
         self.lastname = lastname
 
     def initials(self):
-        return "{}. {}.".format(self.firstname[0], self.lastname[0])
+        return "{}.{}.".format(self.firstname[0], self.lastname[0])
 
 
 @app.route('/')
@@ -17,6 +17,11 @@ class User:
 def index():
     return render_template('index.html', title='Title passed from view to template',
                            user=User('Luke', 'Woods'))
+
+
+@app.route('/add')
+def add():
+    return render_template('add.html')
 
 
 if __name__ == '__main__':
