@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+/pluralsight/
+.idea/
+pluralsight/
+static/img/
